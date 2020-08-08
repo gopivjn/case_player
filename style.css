@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Roboto", sans-serif;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -36,7 +36,7 @@ main {
 
 #container {
   width: var(--max-width);
-  border: goldenrod 5px solid;
+  border: goldenrod 2px solid;
 }
 
 .main-container {
@@ -223,10 +223,21 @@ h1 {
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  #container {
+    width: auto;
+    border: goldenrod 2px solid;
+  }
+
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    z-index: 2;
   }
 
   .logo {
