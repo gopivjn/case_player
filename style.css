@@ -6,6 +6,8 @@
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --bg-content: #eef1f4;
+  --bg-sample: #888888;
+  --bg-sample2: #dae1e7;
   --transition-speed: 600ms;
   --max-width: 1260px;
 }
@@ -38,11 +40,36 @@ main {
 }
 
 #container {
-  width: var(--max-width);
+  /* width: var(--max-width); */
   /* border: goldenrod 2px solid; */
-  height: 675px;
+  /* height: 675px;
+  background-color: #318fb5;
+  overflow: hidden; */
+  width: 1280px;
+  height: 695px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  position: absolute;
+  left: 23%;
+  top: 38%;
+  margin-left: -250px;
+  margin-top: -250px;
+  border-radius: 10px;
 }
 
+#player {
+  width: 1260px;
+  height: 675px;
+  margin: 0 auto;
+  background: var(--bg-content);
+  position: absolute;
+  left: 20.2%;
+  top: 37.5%;
+  margin-left: -250px;
+  margin-top: -250px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
 .main-container {
   display: grid;
   grid-template-columns: 822px 377px;
@@ -62,6 +89,7 @@ main {
   transition: width 600ms ease;
   overflow: scroll;
   height: 675px;
+  margin-top: 4.2%;
 }
 
 .navbar-nav {
@@ -174,15 +202,18 @@ h1 {
 }
 
 .sidepane {
-  background-color: var(--text-secondary);
+  background-color: var(--bg-sample2);
   overflow: hidden;
-  position: sticky;
+  position: fixed;
+  width: 25%;
+  top: 9%;
+  left: 68%;
 }
 
 /* Wizzlet Stat */
 
 #wizzlets {
-  height: 410px;
+  height: 655px;
   overflow-y: scroll;
 }
 
@@ -256,7 +287,7 @@ h1 {
   box-shadow: 1px 1px 4px 1px #464646;
   font-size: 13px;
   height: 28px;
-  margin-left: 4rem;
+  margin-left: 3.8rem;
   padding: 1rem;
 }
 
